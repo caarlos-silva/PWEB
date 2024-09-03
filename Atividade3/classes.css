@@ -1,0 +1,35 @@
+.titulo {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitulo {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+.paragrafo {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.lista {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.lista li {
+    margin-bottom: 5px;
+}
