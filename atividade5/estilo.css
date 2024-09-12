@@ -1,0 +1,74 @@
+.div-responsiva {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-responsiva h2::before {
+    content: "Cinza";
+}
+
+@media (max-width: 420px) {
+    .div-responsiva {
+        background-color: gray;
+    }
+    .div-responsiva h2::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .div-responsiva {
+        background-color: orange;
+    }
+    .div-responsiva h2::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div-responsiva {
+        background-color: pink;
+    }
+    .div-responsiva h2::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .div-responsiva {
+        background-color: brown;
+    }
+    .div-responsiva h2::before {
+        content: "Marrom";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .div-responsiva {
+        background-color: blue;
+    }
+    .div-responsiva h2::before {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .div-responsiva {
+        background-color: yellow;
+    }
+    .div-responsiva h2::before {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .div-responsiva {
+        background-color: green;
+    }
+    .div-responsiva h2::before {
+        content: "Verde";
+    }
+}
