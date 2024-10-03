@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pesquisa de Opinião</title>
+</head>
+<body>
+    <h1>Pesquisa de Opinião</h1>
+    <form id="surveyForm">
+        Idade: <input type="number" id="idade" required><br>
+        Sexo: 
+        <select id="sexo" required>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br>
+        Opinião:
+        <select id="opiniao" required>
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="resultados"></div>
+    <script src="script.js"></script>
+</body>
+</html>
