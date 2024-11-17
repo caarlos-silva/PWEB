@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - Tarefas Pessoais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Quadro Kanban - Tarefas Pessoais</h1>
+    </div>
+    <div class="kanban-board">
+        <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>A fazer</h2>
+            <div class="task-list"></div>
+            <button onclick="showForm()">Adicionar Tarefa</button>
+        </div>
+        <div class="column" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Em andamento</h2>
+            <div class="task-list"></div>
+        </div>
+        <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Concluído</h2>
+            <div class="task-list"></div>
+        </div>
+    </div>
+
+    <div id="task-form" class="task-form">
+        <h2 id="form-title">Adicionar Tarefa</h2>
+        <label for="task-title">Título:</label>
+        <input type="text" id="task-title">
+        <label for="task-description">Descrição:</label>
+        <input type="text" id="task-description">
+        <label for="task-priority">Prioridade:</label>
+        <input type="text" id="task-priority">
+        <label for="task-due-date">Data de Vencimento (DD-MM-AAAA):</label>
+        <input type="text" id="task-due-date">
+        <label for="task-responsible">Responsáveis:</label>
+        <input type="text" id="task-responsible">
+        <button onclick="saveTask()">Salvar</button>
+        <button onclick="hideForm()">Cancelar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
